@@ -1,99 +1,104 @@
 # 🏥 AI-Based Retinal Image Classification for Early Detection of Eye Diseases
 
-**An AI-powered healthcare web application for retinal disease detection, patient management, and doctor–patient communication.**
+### An Intelligent Healthcare Platform Powered by Artificial Intelligence, Deep Learning and Full-Stack Web Technologies
+
+<p align="center">
+  <b>AI-Powered Retinal Screening | Doctor–Patient Communication | Smart Healthcare Management</b>
+</p>
 
 ---
 
-## 📌 1. Project Overview
+## 📌 1. About the Project
 
-The **AI-Based Retinal Image Classification for Early Detection of Eye Diseases** is a full-stack healthcare web application that uses Artificial Intelligence (AI), Machine Learning (ML), and Deep Learning to analyze retinal fundus images and identify potential eye diseases.
+The **AI-Based Retinal Image Classification for Early Detection of Eye Diseases** is an intelligent healthcare web application designed to assist in the preliminary identification of retinal diseases using Artificial Intelligence and Deep Learning.
 
-The system uses a **TensorFlow-based Convolutional Neural Network (CNN)** model to classify retinal images into four categories:
+The application uses a trained **TensorFlow/Keras CNN model** to analyze retinal fundus images and classify them into four categories:
 
 1. Normal
 2. Glaucoma
 3. Diabetic Retinopathy
 4. Hypertensive Retinopathy
 
-The application provides three independent portals:
+The system provides a centralized platform with three separate portals:
 
-- **Patient Portal:** Allows patients to upload retinal images, view AI-generated prediction reports, check previous results, and communicate directly with doctors.
-- **Doctor Portal:** Allows doctors to view assigned patients, access retinal image analysis reports, review AI predictions, communicate with patients, and provide medical recommendations.
-- **Admin Portal:** Allows administrators to manage patients, doctors, appointments, user accounts, and overall platform activities.
+- **Patient Portal:** Upload retinal images, view AI prediction results, download reports, manage appointments and communicate directly with doctors.
+- **Doctor Portal:** View assigned patients, access retinal images and AI reports, review predictions, provide recommendations and communicate with patients.
+- **Admin Portal:** Manage patients, doctors, appointments, accounts and platform activities.
 
-The main objective is to assist healthcare professionals in identifying possible retinal abnormalities at an early stage and improving the efficiency of preliminary eye screening.
-
-> **Important:** This application is an academic decision-support prototype. AI predictions are not medical diagnoses. All results must be reviewed by a qualified ophthalmologist.
+The main objective is to combine AI-powered retinal image analysis with a practical healthcare management system.
 
 ---
 
 ## 🎯 2. Project Objectives
 
-- Develop an AI-powered retinal image classification system.
-- Detect four categories of retinal conditions using TensorFlow.
-- Generate percentage-based prediction results for each disease category.
-- Provide separate dashboards for patients, doctors, and administrators.
-- Enable direct communication between patients and doctors through an integrated messenger.
-- Allow doctors to access patient reports and prediction history.
-- Maintain patient records and previous prediction results.
-- Generate downloadable retinal analysis reports.
-- Develop a responsive and user-friendly healthcare platform.
+- Develop an AI-powered retinal disease classification application.
+- Classify retinal images into four different categories.
+- Generate confidence percentages for all four disease categories.
+- Provide separate dashboards for patients, doctors and administrators.
+- Implement real-time communication between doctors and patients.
+- Allow doctors to view and review patient retinal reports.
+- Generate downloadable PDF analysis reports.
+- Maintain patient records and prediction history.
+- Implement secure role-based authentication.
+- Develop a responsive and user-friendly interface.
 
 ---
 
-## 🚀 3. Key Features
+## 🚀 3. Main Modules
 
-### 👤 A. Patient Portal
+### 3.1 Patient Portal
 
-The Patient Portal provides patients with a personalized dashboard to manage their retinal health records.
+The Patient Portal provides patients with a personalized healthcare dashboard.
 
 **Features:**
 
-- Patient registration and secure login.
+- Patient registration and login.
 - Personal profile management.
 - Upload retinal fundus images.
-- AI-powered retinal image analysis.
-- View classification results and confidence percentages.
-- View previous prediction history.
-- Download AI-generated PDF reports.
-- View assigned doctor details.
+- AI-based retinal disease classification.
+- View all four prediction percentages.
+- View the highest-confidence prediction.
+- Access previous prediction history.
+- Download PDF analysis reports.
+- View assigned doctor information.
 - Direct messaging with doctors.
-- Request appointments.
-- View doctor recommendations and prescriptions.
-- Track report and consultation history.
+- Request doctor appointments.
+- View medical recommendations and prescriptions.
+- Track consultation history.
 
-### 🩺 B. Doctor Portal
+### 3.2 Doctor Portal
 
-The Doctor Portal provides doctors with tools to review patient information and AI-generated retinal analysis reports.
+The Doctor Portal allows doctors to manage patient consultations and review AI-generated retinal reports.
 
 **Features:**
 
-- Doctor registration and login (subject to admin approval).
-- Doctor profile management.
+- Doctor login and profile management.
+- Admin-approved doctor accounts.
 - View assigned patients.
 - View patient retinal images.
-- Access AI-generated prediction reports.
-- View disease classification percentages.
+- Access AI-generated reports.
+- View all four classification percentages.
 - Review patient prediction history.
-- Add medical observations and recommendations.
-- Create and manage prescriptions.
-- Manage patient appointments.
-- Direct messaging with patients.
+- Add medical observations.
+- Provide recommendations.
+- Create prescriptions.
+- Manage appointments.
+- Direct communication with patients.
 - Download patient reports.
-- Update consultation status.
 
-**Doctor Dashboard Modules:**
+**Doctor Dashboard Sections:**
 
-1. Total Assigned Patients
-2. Pending Appointments
-3. New Patient Reports
-4. AI Prediction History
-5. Patient Messenger
-6. Medical Recommendations
+1. Dashboard Overview
+2. Assigned Patients
+3. Patient Reports
+4. AI Prediction Analysis
+5. Appointments
+6. Patient Messenger
+7. Medical Recommendations
 
-### 🛡️ C. Admin Portal
+### 3.3 Admin Portal
 
-The Admin Portal provides centralized management of the entire healthcare platform.
+The Admin Portal provides centralized control over the complete application.
 
 **Features:**
 
@@ -102,220 +107,184 @@ The Admin Portal provides centralized management of the entire healthcare platfo
 - Manage patient accounts.
 - Manage doctor accounts.
 - Approve or reject doctor registrations.
-- Activate or deactivate accounts.
-- View all patient records.
-- Manage doctor–patient assignments.
-- Monitor AI prediction records.
+- Activate and deactivate accounts.
+- Assign doctors to patients.
 - Manage appointments.
-- Monitor communication activity where authorized.
-- Manage system settings.
-- View platform usage statistics.
+- View prediction statistics.
+- Monitor platform activities.
+- Manage user access permissions.
+- Maintain system records.
 
 ---
 
 ## 🧠 4. AI-Based Retinal Disease Classification
 
-The AI module is the core component of this project.
+The AI module is the core functionality of this project.
 
-It uses a trained Deep Learning model built with **TensorFlow and Keras** to analyze retinal fundus images.
+It uses a trained **Convolutional Neural Network (CNN)** developed using TensorFlow and Keras.
 
-### Supported Disease Categories
+### 4.1 Supported Classification Categories
 
-| Class | Description |
+| Category | Description |
 |---|---|
-| Normal | Retinal image without detected signs of the target conditions |
-| Glaucoma | Identifies retinal features associated with possible glaucoma |
-| Diabetic Retinopathy | Identifies retinal changes associated with diabetic retinopathy |
-| Hypertensive Retinopathy | Identifies retinal changes associated with hypertension |
+| Normal | No visible signs of the target conditions detected by the model |
+| Glaucoma | Retinal features associated with possible glaucoma |
+| Diabetic Retinopathy | Retinal abnormalities associated with diabetes |
+| Hypertensive Retinopathy | Retinal abnormalities associated with hypertension |
 
-### AI Prediction Workflow
+### 4.2 AI Prediction Workflow
 
-1. Patient uploads a retinal fundus image.
-2. Flask backend validates the uploaded image.
-3. Image preprocessing is performed.
-4. The processed image is passed to the trained TensorFlow model.
-5. The model predicts probabilities for all four classes.
-6. The system identifies the highest-scoring class.
-7. Prediction results are displayed on the patient dashboard.
-8. The prediction report is stored in the database.
-9. The assigned doctor can review the report.
+```text
+Patient Uploads Retinal Image
+             |
+             v
+      Flask Image API
+             |
+             v
+       Image Validation
+             |
+             v
+     Image Preprocessing
+             |
+             v
+     TensorFlow CNN Model
+             |
+             v
+      Four-Class Prediction
+             |
+             v
+     Confidence Calculation
+             |
+             v
+       Prediction Results
+             |
+       +-----+------+
+       |            |
+       v            v
+ Patient Portal  Doctor Portal
+       |            |
+       +-----+------+
+             |
+             v
+       Database Storage
+```
 
-### Example AI Prediction Result
+### 4.3 Prediction Result Example
 
-The following values are illustrative examples, not actual model outputs.
+The following is an illustrative example, not a real model prediction.
 
-| Disease Category | Prediction Confidence |
+| Disease Category | Confidence Score |
 |---|---:|
 | Normal | 10% |
 | Glaucoma | 15% |
 | Diabetic Retinopathy | 65% |
 | Hypertensive Retinopathy | 10% |
 
-**Predicted Class:** Diabetic Retinopathy
-
 **Highest Model Confidence:** 65%
 
-The system should display all four class scores instead of showing only the predicted class.
+**Top Predicted Category:** Diabetic Retinopathy
 
-**Note:** These percentages represent model confidence scores, not the probability that a patient has a disease or the severity of that disease. Model calibration and clinical validation are required before interpreting them clinically.
+The application must display all four scores using visual progress bars or charts.
 
----
+**Important:** These percentages are model confidence scores, not confirmed disease probabilities or disease severity measurements. They should not be interpreted as a medical diagnosis.
 
-## 🏗️ 5. Technology Stack
+### 4.4 Recommended AI Architecture
 
-### Frontend Technologies
+Use EfficientNetB0 with TensorFlow/Keras as the initial model architecture.
 
-| Technology | Purpose |
-|---|---|
-| HTML5 | Webpage structure |
-| CSS3 | Styling and responsive design |
-| JavaScript | Frontend interactions |
-| React.js | Component-based user interface |
-| React Router | Portal navigation |
-| Axios | API communication |
+**Model pipeline:**
 
-### Backend Technologies
+1. Collect a suitable retinal fundus image dataset.
+2. Organize images into four classes.
+3. Remove corrupted or unsuitable images.
+4. Resize images to the model's required input dimensions.
+5. Normalize images using the exact preprocessing expected by the selected model.
+6. Apply data augmentation to the training dataset.
+7. Train the CNN model.
+8. Evaluate the model.
+9. Save the trained model.
+10. Integrate the model with the Flask backend.
 
-| Technology | Purpose |
-|---|---|
-| Python | Backend programming |
-| Flask | Pure Python backend framework |
-| Flask-CORS | Cross-origin API communication |
-| Flask-JWT-Extended | Authentication and authorization |
-| Flask-SocketIO | Real-time doctor–patient messaging |
-| Werkzeug | Secure file upload utilities |
+**Recommended evaluation metrics:**
 
-### AI / Machine Learning
+- Accuracy
+- Precision
+- Recall
+- F1-score
+- Confusion Matrix
+- Per-class performance
 
-| Technology | Purpose |
-|---|---|
-| TensorFlow | Deep Learning framework |
-| Keras | CNN model development |
-| NumPy | Numerical operations |
-| Pillow / OpenCV | Image preprocessing |
-| Scikit-learn | Model evaluation |
-| Matplotlib | Model performance visualization |
-
-### Database
-
-- MySQL / PostgreSQL – Primary database.
-- SQLAlchemy – Database ORM.
-- Local or cloud-based secure storage – Retinal image and report storage.
-
-### Additional Tools
-
-- Git and GitHub – Version control.
-- VS Code – Development environment.
-- Postman – API testing.
-- ReportLab – PDF report generation.
+Use patient-level separation between training, validation and test datasets to reduce data leakage.
 
 ---
 
-## 🏛️ 6. System Architecture
+## 💬 5. Real-Time Doctor–Patient Messenger
 
-The application follows a three-tier architecture.
+The application includes a built-in messenger that allows patients and doctors to communicate directly.
 
-```text
-                 USER INTERFACE
-                       |
-          +------------+------------+
-          |            |            |
-      PATIENT        DOCTOR        ADMIN
-       PORTAL        PORTAL        PORTAL
-          |            |            |
-          +------------+------------+
-                       |
-                 REACT FRONTEND
-                       |
-                  AXIOS / API
-                       |
-              PYTHON FLASK BACKEND
-                       |
-       +---------------+----------------+
-       |               |                |
-   AUTH MODULE     AI PREDICTION    MESSAGING
-       |               |                |
-       |           TENSORFLOW       SOCKET.IO
-       |           CNN MODEL            |
-       |               |                |
-       +---------------+----------------+
-                       |
-                  DATABASE
-                       |
-          +------------+------------+
-          |            |            |
-       PATIENT       DOCTOR       REPORTS
-       RECORDS       RECORDS      HISTORY
-```
+The messaging functionality is implemented using **Flask-SocketIO** and the Socket.IO client.
 
-### Architecture Explanation
-
-- React.js provides the frontend interface.
-- HTML and CSS are used to structure and style the application.
-- Flask handles backend business logic and REST APIs.
-- TensorFlow performs retinal image classification.
-- Socket.IO enables real-time doctor–patient messaging.
-- MySQL/PostgreSQL stores application records.
-- Secure file storage maintains retinal images and generated reports.
-
----
-
-## 💬 7. Doctor–Patient Messenger
-
-One of the major features of the application is the integrated messaging system.
-
-Patients and doctors can communicate directly without switching to an external messaging application.
-
-### Patient Messenger Features
+### Patient Messenger
 
 - View assigned doctor.
-- Send text messages.
-- Receive doctor responses.
+- Send messages directly.
+- Receive real-time responses.
 - View previous conversations.
-- Share report references with doctors.
+- Share retinal report references.
 - View message timestamps.
-- Receive new-message notifications.
+- Receive notifications.
 
-### Doctor Messenger Features
+### Doctor Messenger
 
 - View assigned patient conversations.
 - Reply to patient messages.
-- Review patient reports during consultation.
+- Access patient reports during consultations.
 - Share medical recommendations.
-- Send appointment-related messages.
-- Access previous conversation history.
+- Send appointment updates.
+- View conversation history.
 
 ### Messaging Architecture
 
 ```text
        PATIENT PORTAL
               |
-         SEND MESSAGE
+              v
+        SEND MESSAGE
               |
-        FLASK-SOCKETIO
+              v
+       SOCKET.IO CLIENT
               |
+              v
+       FLASK-SOCKETIO
+              |
+              v
        MESSAGE VALIDATION
               |
+              v
            DATABASE
               |
+              v
         REAL-TIME EVENT
               |
+              v
         DOCTOR PORTAL
-              |
-        RECEIVE MESSAGE
 ```
 
-**Technology:** Flask-SocketIO and Socket.IO Client.
+**Security requirements:**
 
-**Security:** Only authorized patients and their assigned doctors should be allowed to access a conversation.
+- Only authenticated users can send messages.
+- Patients can access their own conversations.
+- Doctors can access conversations with their assigned patients.
+- Messages must be stored securely.
+- Unauthorized conversation access must be rejected.
 
 ---
 
-## 📊 8. AI-Generated Medical Report
+## 📊 6. AI-Generated Retinal Analysis Report
 
-After image classification, the application generates a structured report.
+Once the patient uploads a retinal image, the system generates an analysis report.
 
-### Report Contents
+### Report Information
 
 - Patient ID
 - Patient Name
@@ -328,29 +297,29 @@ After image classification, the application generates a structured report.
 - Diabetic Retinopathy Confidence Percentage
 - Hypertensive Retinopathy Confidence Percentage
 - AI Model Version
+- Doctor Review Status
 - Doctor's Observations
 - Doctor's Recommendations
-- Consultation Status
 
 ### Sample Report
 
 ```text
-=========================================
+==========================================
        RETINAL IMAGE ANALYSIS REPORT
-=========================================
+==========================================
 
-Patient ID       : PAT001
-Report ID        : REP001
-Analysis Date    : DD-MM-YYYY
+Patient ID: PAT001
+Report ID: REP001
+Date: DD-MM-YYYY
 
 AI CLASSIFICATION RESULTS
 
-Normal                    : 10%
-Glaucoma                  : 15%
-Diabetic Retinopathy      : 65%
-Hypertensive Retinopathy  : 10%
+Normal                     : 10%
+Glaucoma                   : 15%
+Diabetic Retinopathy       : 65%
+Hypertensive Retinopathy   : 10%
 
-Predicted Category:
+Top Predicted Category:
 Diabetic Retinopathy
 
 Model Confidence:
@@ -359,38 +328,140 @@ Model Confidence:
 Doctor Review:
 Pending
 
-=========================================
-Note: AI-generated screening result.
+==========================================
+AI-generated screening result.
 Not a confirmed medical diagnosis.
-=========================================
+==========================================
 ```
 
-Reports can be downloaded in PDF format.
+Reports can be generated using Python ReportLab and downloaded as PDF documents.
+
+---
+
+## 🏗️ 7. Technology Stack
+
+### Frontend
+
+| Technology | Usage |
+|---|---|
+| HTML5 | Webpage structure |
+| CSS3 | Styling and responsive design |
+| JavaScript | Frontend functionality |
+| React.js | Component-based frontend |
+| React Router | Navigation between portals |
+| Axios | Backend API communication |
+| Socket.IO Client | Real-time messaging |
+
+### Backend
+
+| Technology | Usage |
+|---|---|
+| Python | Backend programming |
+| Flask | Backend web framework |
+| Flask-CORS | Cross-origin API communication |
+| Flask-JWT-Extended | Authentication |
+| Flask-SQLAlchemy | Database operations |
+| Flask-SocketIO | Real-time communication |
+| Werkzeug | Secure image upload handling |
+
+### AI and Machine Learning
+
+| Technology | Usage |
+|---|---|
+| TensorFlow | Deep Learning framework |
+| Keras | CNN model development |
+| EfficientNetB0 | Image classification architecture |
+| NumPy | Numerical operations |
+| OpenCV | Image preprocessing |
+| Pillow | Image processing |
+| Scikit-learn | Model evaluation |
+| Matplotlib | Visualization |
+
+### Database and Tools
+
+| Technology | Usage |
+|---|---|
+| MySQL | Relational database |
+| ReportLab | PDF report generation |
+| Git | Version control |
+| GitHub | Source code management |
+| VS Code | Development environment |
+| Postman | API testing |
+
+**Architecture decision:** React.js is the frontend framework, while Python Flask is the only backend framework. HTML5 and CSS3 are used within the React frontend.
+
+---
+
+## 🏛️ 8. System Architecture
+
+The project follows a modular three-tier architecture.
+
+```text
+                 USERS
+                   |
+       +-----------+-----------+
+       |           |           |
+    PATIENT      DOCTOR       ADMIN
+     PORTAL      PORTAL       PORTAL
+       |           |           |
+       +-----------+-----------+
+                   |
+             REACT FRONTEND
+                   |
+             AXIOS / SOCKET.IO
+                   |
+           PYTHON FLASK BACKEND
+                   |
+       +-----------+-----------+
+       |           |           |
+   AUTH MODULE  AI MODULE  MESSAGING
+       |           |           |
+       |       TENSORFLOW   SOCKET.IO
+       |        CNN MODEL      |
+       |           |           |
+       +-----------+-----------+
+                   |
+                DATABASE
+                   |
+       +-----------+-----------+
+       |           |           |
+    PATIENT      DOCTOR      REPORTS
+    RECORDS      RECORDS     HISTORY
+```
+
+### Architecture Components
+
+- **Presentation Layer:** React.js, HTML5 and CSS3.
+- **Application Layer:** Python Flask.
+- **AI Layer:** TensorFlow and Keras.
+- **Communication Layer:** Flask-SocketIO.
+- **Data Layer:** MySQL and SQLAlchemy.
+- **Report Layer:** Python ReportLab.
 
 ---
 
 ## 🗄️ 9. Database Design
 
-The application uses a relational database to organize patient information, doctor details, reports, appointments, and conversations.
+The application uses MySQL to store user accounts, patient records, prediction history, appointments and conversations.
 
 ### Main Database Tables
 
-| Table | Purpose |
+| Table Name | Purpose |
 |---|---|
-| users | Authentication and account information |
-| patients | Patient profile details |
-| doctors | Doctor profile and qualification details |
-| doctor_patient | Patient–doctor assignments |
+| users | Login and authentication details |
+| patients | Patient profile information |
+| doctors | Doctor profile information |
+| doctor_patient | Doctor–patient assignments |
 | retinal_images | Uploaded retinal images |
-| predictions | AI classification results |
-| reports | Generated medical reports |
-| appointments | Appointment details |
-| conversations | Doctor–patient conversation records |
-| messages | Individual chat messages |
-| prescriptions | Doctor-issued prescriptions |
-| notifications | System notifications |
+| predictions | AI prediction results |
+| reports | Generated reports |
+| appointments | Appointment information |
+| conversations | Chat conversation records |
+| messages | Individual messages |
+| prescriptions | Medical prescriptions |
+| notifications | User notifications |
 
-### Database Relationship Overview
+### Database Relationships
 
 ```text
 USERS
@@ -420,22 +491,17 @@ DOCTORS
   +---- DOCTOR_PATIENT
   |
   +---- PRESCRIPTIONS
-  |
-  +---- APPOINTMENTS
 ```
 
 ---
 
-## 📁 10. Project Folder Structure
-
-The following is the recommended folder structure for the project.
+## 📁 10. Recommended Project Folder Structure
 
 ```text
-AI-Retinal-Disease-Classification/
+AI-Retinal-Classification/
 │
 ├── frontend/
 │   ├── public/
-│   │   ├── logo.png
 │   │   └── assets/
 │   │
 │   ├── src/
@@ -446,7 +512,7 @@ AI-Retinal-Disease-Classification/
 │   │   │   ├── Sidebar.jsx
 │   │   │   ├── ProtectedRoute.jsx
 │   │   │   ├── Messenger.jsx
-│   │   │   └── ReportCard.jsx
+│   │   │   └── PredictionChart.jsx
 │   │   │
 │   │   ├── pages/
 │   │   │   ├── Home.jsx
@@ -455,7 +521,7 @@ AI-Retinal-Disease-Classification/
 │   │   │   │
 │   │   │   ├── patient/
 │   │   │   │   ├── PatientDashboard.jsx
-│   │   │   │   ├── UploadRetinalImage.jsx
+│   │   │   │   ├── UploadImage.jsx
 │   │   │   │   ├── PatientReports.jsx
 │   │   │   │   └── PatientMessages.jsx
 │   │   │   │
@@ -524,18 +590,14 @@ AI-Retinal-Disease-Classification/
 │   │   └── retinal_model.keras
 │   │
 │   ├── uploads/
-│   │   └── retinal_images/
-│   │
 │   ├── generated_reports/
-│   │
 │   └── requirements.txt
 │
 ├── database/
 │   └── schema.sql
 │
 ├── docs/
-│   ├── architecture.png
-│   └── screenshots/
+│   └── architecture.png
 │
 ├── .env.example
 ├── .gitignore
@@ -544,20 +606,18 @@ AI-Retinal-Disease-Classification/
 
 ---
 
-## 🔗 11. Main Backend API Endpoints
+## 🔗 11. Backend API Endpoints
 
-The backend uses RESTful APIs developed using pure Python Flask.
-
-### Authentication APIs
+### Authentication
 
 | Method | Endpoint | Description |
 |---|---|---|
-| POST | /api/auth/register | Register a user |
-| POST | /api/auth/login | Login |
-| POST | /api/auth/logout | Logout |
+| POST | /api/auth/register | Register user |
+| POST | /api/auth/login | Login user |
+| POST | /api/auth/logout | Logout user |
 | GET | /api/auth/profile | Get user profile |
 
-### Patient APIs
+### Patient
 
 | Method | Endpoint | Description |
 |---|---|---|
@@ -565,117 +625,112 @@ The backend uses RESTful APIs developed using pure Python Flask.
 | POST | /api/patient/upload | Upload retinal image |
 | GET | /api/patient/reports | View reports |
 | GET | /api/patient/history | Prediction history |
-| GET | /api/patient/doctors | View assigned doctors |
+| GET | /api/patient/doctors | Assigned doctors |
 
-### Doctor APIs
+### Doctor
 
 | Method | Endpoint | Description |
 |---|---|---|
 | GET | /api/doctor/dashboard | Doctor dashboard |
-| GET | /api/doctor/patients | View assigned patients |
-| GET | /api/doctor/reports | View patient reports |
-| POST | /api/doctor/recommendation | Add recommendations |
+| GET | /api/doctor/patients | Assigned patients |
+| GET | /api/doctor/reports | Patient reports |
+| POST | /api/doctor/recommendation | Add recommendation |
 | POST | /api/doctor/prescription | Create prescription |
 
-### Admin APIs
+### Admin
 
 | Method | Endpoint | Description |
 |---|---|---|
 | GET | /api/admin/dashboard | Admin dashboard |
-| GET | /api/admin/patients | Manage patients |
-| GET | /api/admin/doctors | Manage doctors |
-| PUT | /api/admin/doctor/approve/:id | Approve doctor |
-| DELETE | /api/admin/user/:id | Manage user deletion |
+| GET | /api/admin/patients | View patients |
+| GET | /api/admin/doctors | View doctors |
+| PUT | /api/admin/doctors/:id/approve | Approve doctor |
+| DELETE | /api/admin/users/:id | Delete user |
 
-### Prediction APIs
+### AI Prediction
 
 | Method | Endpoint | Description |
 |---|---|---|
 | POST | /api/prediction/classify | Classify retinal image |
-| GET | /api/prediction/history | Get prediction history |
-| GET | /api/prediction/:id | Get prediction details |
+| GET | /api/prediction/history | Prediction history |
+| GET | /api/prediction/:id | Prediction details |
 
-### Messaging APIs
+### Messaging
 
 | Method | Endpoint | Description |
 |---|---|---|
-| GET | /api/messages/:conversation_id | Get conversation |
-| POST | /api/messages/send | Send message |
 | GET | /api/messages/conversations | Get conversations |
+| GET | /api/messages/:id | Get messages |
+| POST | /api/messages/send | Send message |
 
-Real-time messaging events are handled separately using Flask-SocketIO.
+Real-time message events are handled through Flask-SocketIO.
 
 ---
 
-## ⚙️ 12. Installation and Setup
+## ⚙️ 12. Installation and Execution
 
 ### Prerequisites
 
-Install the following tools:
+Install:
 
 - Python 3.10 or 3.11
 - Node.js and npm
-- MySQL or PostgreSQL
+- MySQL
 - Visual Studio Code
 - Git
 
-### Step 1: Clone the Repository
+### Step 1: Clone Repository
 
 ```bash
-git clone https://github.com/your-username/AI-Retinal-Disease-Classification.git
+git clone https://github.com/your-username/AI-Retinal-Classification.git
 
-cd AI-Retinal-Disease-Classification
+cd AI-Retinal-Classification
 ```
 
-### Step 2: Backend Setup
-
-Navigate to the backend folder.
+### Step 2: Backend Environment Setup
 
 ```bash
 cd backend
-```
 
-Create a virtual environment.
-
-```bash
 python -m venv venv
 ```
 
-Activate the environment on Windows.
+Activate virtual environment on Windows:
 
 ```bash
 venv\Scripts\activate
 ```
 
-Install the dependencies.
+Install dependencies:
 
 ```bash
 pip install -r requirements.txt
 ```
 
-### Step 3: Configure Environment Variables
+### Step 3: Environment Configuration
 
-Create a `.env` file inside the project root or configure it according to your backend settings.
-
-Example:
+Create a `.env` file.
 
 ```env
 SECRET_KEY=your-secret-key
 JWT_SECRET_KEY=your-jwt-secret
+
 DATABASE_URL=mysql+pymysql://root:password@localhost/retinal_ai
+
 UPLOAD_FOLDER=uploads/retinal_images
+
 MODEL_PATH=ai_model/retinal_model.keras
 ```
 
-Use your own database credentials and keep `.env` out of Git.
+Configure the database and credentials according to your local setup.
 
-### Step 4: Start Flask Backend
+### Step 4: Run Flask Backend
 
 ```bash
 python app.py
 ```
 
-Backend server:
+Backend URL:
 
 ```text
 http://127.0.0.1:5000
@@ -687,21 +742,17 @@ Open another terminal.
 
 ```bash
 cd frontend
-```
 
-Install dependencies.
-
-```bash
 npm install
 ```
 
-Start the React development server.
+Start React:
 
 ```bash
 npm run dev
 ```
 
-Frontend server:
+Frontend URL:
 
 ```text
 http://localhost:5173
@@ -709,9 +760,9 @@ http://localhost:5173
 
 ---
 
-## 📦 13. Recommended Python Requirements
+## 📦 13. Python Dependencies
 
-Create `backend/requirements.txt`:
+Create `backend/requirements.txt`.
 
 ```txt
 Flask
@@ -729,94 +780,117 @@ matplotlib
 pandas
 reportlab
 PyMySQL
-eventlet
 ```
 
-Use compatible package versions for your selected Python and TensorFlow versions. For production, configure and test the Socket.IO deployment with a compatible server and async mode.
+Install all dependencies:
+
+```bash
+pip install -r requirements.txt
+```
+
+Use package versions compatible with the selected Python and TensorFlow versions.
 
 ---
 
-## 🔐 14. Security and Privacy
+## 🔐 14. Security Implementation
 
-Because this project handles sensitive healthcare information, security is an important part of the application.
+The application handles sensitive healthcare information, so security must be implemented at every layer.
 
-Recommended security practices:
-
-- Hash passwords before storing them.
-- Use JWT-based authentication.
-- Implement role-based access control.
-- Restrict patient reports to authorized doctors.
-- Validate uploaded image file types and sizes.
-- Generate unique filenames for uploaded images.
-- Prevent unauthorized access to uploaded files.
-- Use secure environment variables.
-- Protect messaging conversations with access permissions.
-- Maintain audit logs for sensitive actions.
-- Use HTTPS in deployment.
-- Obtain appropriate consent before storing patient information.
+- Password hashing.
+- JWT authentication.
+- Role-based access control.
+- Patient and doctor authorization.
+- Secure image upload validation.
+- Unique filenames for uploaded images.
+- Protected report downloads.
+- Restricted messenger conversations.
+- Environment-based secret management.
+- HTTPS for deployment.
+- Audit logging.
+- Patient consent and data privacy controls.
 
 ---
 
-## 📈 15. Future Enhancements
+## 🧪 15. Model Evaluation
 
-The project can be extended with the following features:
+The AI model should be evaluated using a separate test dataset.
 
-1. Integration of advanced CNN architectures such as EfficientNet and ResNet.
-2. Grad-CAM visualization to highlight important retinal image regions.
-3. Improved AI model accuracy through larger and more diverse datasets.
-4. Model confidence calibration and external clinical validation.
-5. Real-time video consultation between doctors and patients.
-6. Online appointment booking.
-7. Automated email and notification services.
-8. Multilingual user interface.
-9. Cloud-based image and report storage.
-10. Mobile application integration.
-11. Doctor analytics dashboard.
-12. Advanced patient health-history tracking.
+Recommended metrics:
 
----
+| Metric | Purpose |
+|---|---|
+| Accuracy | Overall classification performance |
+| Precision | Correct positive predictions |
+| Recall | Ability to identify positive samples |
+| F1-score | Balance between precision and recall |
+| Confusion Matrix | Class-wise prediction performance |
 
-## 🎓 16. Expected Project Outcome
-
-The expected outcome is a fully functional AI-powered healthcare web application that combines retinal image classification, patient management, doctor consultation, and administrative management in one platform.
-
-The application will provide:
-
-- Three separate user portals.
-- TensorFlow-based classification of four retinal image categories.
-- Percentage-based AI prediction results.
-- Patient report generation.
-- Doctor access to patient reports.
-- Direct doctor–patient messaging.
-- Appointment and patient management.
-- Secure centralized healthcare records.
+Evaluate each of the four categories independently, particularly the false-negative rate, because missed retinal abnormalities can have serious consequences.
 
 ---
 
-## 👨‍💻 17. Project Team
+## 🔮 16. Future Enhancements
 
-**Project Title:** AI-Based Retinal Image Classification for Early Detection of Eye Diseases
-
-**Project Type:** Full-Stack Development + Artificial Intelligence + Deep Learning
-
-**Frontend:** React.js, HTML5, CSS3, JavaScript
-
-**Backend:** Python Flask
-
-**AI Framework:** TensorFlow / Keras
-
-**Database:** MySQL / PostgreSQL
-
----
-
-## 📜 18. Disclaimer
-
-This project is developed for academic and research purposes. AI-generated classifications are intended to support preliminary retinal image screening and must not replace professional medical examinations, clinical diagnosis, or treatment decisions.
-
-The model's performance depends on the quality, diversity, and validation of its training data. A qualified eye-care professional must review the findings.
+- Advanced EfficientNet and ResNet architectures.
+- Grad-CAM-based retinal image visualization.
+- Real-time video consultation.
+- Mobile application.
+- Cloud-based image storage.
+- Email and notification integration.
+- Multilingual support.
+- Advanced doctor analytics.
+- Improved AI model calibration.
+- External clinical validation.
+- Integration with electronic health records.
 
 ---
 
-**⭐ AI-Based Retinal Image Classification for Early Detection of Eye Diseases**
+## 🎓 17. Expected Outcome
 
-*Combining Artificial Intelligence and Healthcare Technology to support early retinal disease screening.*
+The project aims to deliver a centralized AI-powered retinal screening and healthcare management platform.
+
+The completed application will provide:
+
+- Three independent user portals.
+- Secure patient and doctor authentication.
+- TensorFlow-based four-class retinal classification.
+- Percentage-based model confidence results.
+- Patient retinal image upload.
+- AI-generated PDF reports.
+- Doctor report review.
+- Real-time doctor–patient communication.
+- Appointment management.
+- Centralized administration.
+
+---
+
+## 👨‍💻 18. Project Information
+
+| Field | Details |
+|---|---|
+| Project Title | AI-Based Retinal Image Classification for Early Detection of Eye Diseases |
+| Project Type | Mini Project |
+| Domain | Artificial Intelligence and Healthcare |
+| Frontend | React.js, HTML5, CSS3, JavaScript |
+| Backend | Python Flask |
+| AI Framework | TensorFlow / Keras |
+| Model | EfficientNetB0 / CNN |
+| Database | MySQL |
+| Messaging | Flask-SocketIO |
+| Report Generation | ReportLab |
+
+---
+
+## 📜 19. Disclaimer
+
+This project is developed for academic and research purposes. The AI model provides preliminary image-classification results and must not be considered a substitute for professional medical diagnosis.
+
+All AI-generated results must be reviewed by a qualified ophthalmologist. Clinical use requires appropriate dataset validation, model testing, calibration, and regulatory assessment.
+
+---
+
+<p align="center">
+  <b>AI-Based Retinal Image Classification for Early Detection of Eye Diseases</b>
+  <br/>
+  <i>Bringing Artificial Intelligence and Healthcare Together for Early Retinal Disease Screening.</i>
+</p>
